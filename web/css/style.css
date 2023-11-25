@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+#dynamic-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    height: 100%; /* Ensure #dynamic-content-container takes full height of the viewport */
+}
+
+#animationContent {
+    position: fixed;
+    background: radial-gradient(#000000, rgba(65, 66, 74, 0.492));
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+}
+
+#animation{
+    width: 30%;
+    height: 30%;
+}
+
+#emailForm {
+    width: 50%;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    background: linear-gradient(45deg, rgba(245, 70, 66, 0.75), rgba(8, 83, 156, 0.75)), url('https://img.freepik.com/premium-photo/photo-closeup-shot-delicious-food_829042-89.jpg');  
+    color: white;
+    padding: 20px 80px;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#buttonContent {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel] {
+    padding-left: 5px;
+    font-size: 15px;
+    width: 100%;
+    height: 30px;
+    font-weight: bold;
+    border: 3px solid #ffffff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=tel]:focus {
+    font-weight: bold;
+    color: #1ABC9C;
+    border: 3px solid #1ABC9C;
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover,
+input[type=tel]:hover {
+    font-weight: bold;
+    border: 3px solid #283747;
+}
+
+#linkContent{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+#linkSign:hover {
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+
+#linkReset:hover{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+
+.signUpBtn,
+.backBtn {
+    font-weight: bold;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    border-radius: 10px; /* Adjust the margin as needed */
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.signUpBtn:hover,
+.backBtn:hover{
+    font-weight: bold;
+    color: #2E4053;
+    background-color: #E59866;
+}

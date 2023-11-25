@@ -1,0 +1,36 @@
+<!-- web/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <title>Email Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="animation"></div>
+    <form id="emailForm">
+        <h1>Sign Up</h1><br>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Name" required onfocus=removePlaceholder(name) onblur=restorePlaceholder(name)><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required onfocus=removePlaceholder(email) onblur=restorePlaceholder(email)><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Password" required onfocus=removePlaceholder(password) onblur=restorePlaceholder(password)><br><br>
+        <label for="conPassword">Confirm Password</label><br>
+        <input type="password" name="conPassword" id="conPassword" placeholder="Confirm Password" required onfocus=removePlaceholder(conPassword) onblur=restorePlaceholder(conPassword)>
+        <div id="buttonContent">
+            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </div>
+
+    </form>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
