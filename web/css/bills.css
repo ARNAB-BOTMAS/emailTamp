@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dhurjati&family=Ephesis&family=Inter:wght@900&family=Nunito:wght@200&family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(204, 204, 204);
+    /* font-family: 'Dhurjati', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+}
+
+.page {
+    padding: 0;
+    margin: 10px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+    width: 21cm;
+    height: 29.7cm;
+}
+.pageBill{
+    padding: 20px;
+    margin: 20px;
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .page {
+        /* padding: 20px;
+        margin: 20px; */
+        box-shadow: none;
+        /* border: 2px solid saddlebrown; */
+        margin: 0;
+        margin-bottom: 0.5cm;
+        width: 21cm;
+        height: 29.7cm;
+    }
+
+    button {
+        display: none;
+    }
+}
+/* 
+header {
+    align-items: flex-end; /* Align items at the bottom
+} */
+
+footer{
+    flex-direction: column;
+}
+
+.headerBill{
+    padding-bottom: 10px;
+    align-items: flex-end; /* Align items at the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+}
+
+.leftHeader {
+    text-align: left;
+    display: flex;
+}
+
+.rightHeader {
+    vertical-align: middle;
+    text-align: right;
+    justify-content: center;
+    /* text-align: ; */
+}
+.content{
+    padding: 20px;
+    margin: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+header, footer {
+    /* background-color: #333; */
+    /* color: white; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.footerCont{
+    border-top: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cont{
+    /* border-style: dashed; */
+    border-top: 1px dashed gray;
+}
+
